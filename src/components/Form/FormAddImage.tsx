@@ -14,7 +14,7 @@ interface FormAddImageProps {
 interface FormAddImageData {
   title: string;
   description: string;
-  image: any;
+  image: unknown;
 }
 
 export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
@@ -81,7 +81,7 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
     formState,
     setError,
     trigger,
-    getValues,
+    // getValues,
   } = useForm();
   const { errors } = formState;
 
@@ -153,7 +153,7 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
       >
         Enviar
       </Button>
-      <Button onClick={() => console.log(getValues(), imageUrl)}>Values</Button>
+      {/* <Button onClick={() => console.log(getValues(), imageUrl)}>Values</Button> */}
     </Box>
   );
 }
