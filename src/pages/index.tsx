@@ -29,7 +29,11 @@ export default function Home(): JSX.Element {
     pageParam = null,
   }): Promise<fetchImagesResponse> {
     if (pageParam) {
-      const { data } = await api.get(`/api/images?after=${pageParam}`);
+      const { data } = await api.get(`/api/images`, {
+        params: {
+          after: pageParam,
+        },
+      });
       return data;
     }
     const { data } = await api.get(`/api/images`);
