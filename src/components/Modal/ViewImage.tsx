@@ -23,7 +23,9 @@ export function ModalViewImage({
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent
-        m="auto"
+        mx="auto"
+        mb="2.5rem"
+        mt="2.5rem"
         w="auto"
         h="auto"
         maxW="900px"

@@ -150,6 +150,7 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
         type="submit"
         w="100%"
         py={6}
+        role="button"
       >
         Enviar
       </Button>

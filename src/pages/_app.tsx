@@ -1,4 +1,6 @@
 import { AppProps } from 'next/app';
+import '../styles/scroll.css';
+
 import { ChakraProvider } from '@chakra-ui/react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 

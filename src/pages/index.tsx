@@ -34,6 +34,7 @@ export default function Home(): JSX.Element {
           after: pageParam,
         },
       });
+
       return data;
     }
     const { data } = await api.get(`/api/images`);
@@ -48,7 +49,7 @@ export default function Home(): JSX.Element {
     fetchNextPage,
     hasNextPage,
   } = useInfiniteQuery('images', fetchImages, {
-    getNextPageParam: lastPage => lastPage.after,
+    getNextPageParam: lastPage => lastPage.after ?? null,
   });
 
   const formattedData = useMemo(() => {
