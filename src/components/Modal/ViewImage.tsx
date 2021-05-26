@@ -28,12 +28,16 @@ export function ModalViewImage({
         mt="2.5rem"
         w="auto"
         h="auto"
-        maxW="900px"
-        maxH="600px"
+        maxW={['320px', '540px', '900px']}
+        maxH={['360px', '440px', '600px']}
         bg="transparent"
       >
         <ModalBody p="0">
-          <Image src={imgUrl} maxW="900px" maxH="600px" />
+          <Image
+            src={imgUrl}
+            maxW={['320px', '540px', '900px']}
+            maxH={['360px', '440px', '600px']}
+          />
         </ModalBody>
 
         <ModalFooter h="2rem" bg="pGray.800" borderBottomRadius="6px">
