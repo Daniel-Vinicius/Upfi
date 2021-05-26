@@ -65,9 +65,9 @@ export default function Home(): JSX.Element {
     return formattedDataTotal;
   }, [data]);
 
-  if (isLoading) {
-    return <Loading />;
-  }
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
 
   if (isError) {
     return <Error />;
