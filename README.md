@@ -41,7 +41,7 @@
 
 &nbsp;
 
-<img src="https://user-images.githubusercontent.com/66279500/119592773-7a142880-bdaf-11eb-96f4-037f2c408b77.mp4" width="100%" />
+https://user-images.githubusercontent.com/66279500/119592773-7a142880-bdaf-11eb-96f4-037f2c408b77.mp4
 
 &nbsp;
 
